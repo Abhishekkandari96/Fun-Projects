@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <form name="form1">
+            <input type="text" placeholder="0000" name="form1input" id="forminput">
+            <br>
+            <input type="button" value="1"  onclick="form1.form1input.value+=1">
+            <input type="button" value="2"  onclick="form1.form1input.value+=2">
+            <input type="button" value="3"  onclick="form1.form1input.value+=3">
+            <input type="button" value="+"  onclick="add()">
+            <br>
+            <input type="button" value="4"  onclick="form1.form1input.value+=4">
+            <input type="button" value="5"  onclick="form1.form1input.value+=5">
+            <input type="button" value="6"  onclick="form1.form1input.value+=6">
+            <input type="button" value="-"  onclick="sub()">
+            <br>
+            <input type="button" value="7"  onclick="form1.form1input.value+=7">
+            <input type="button" value="8"  onclick="form1.form1input.value+=8">
+            <input type="button" value="9"  onclick="form1.form1input.value+=9">
+            <input type="button" value="/"  onclick="div()">
+            <br>
+            <input type="button" value="C"  onclick="form1.form1input.value=''">
+            <input type="button" value="0"  onclick="form1.form1input.value+=0">
+            <input type="button" value="="  onclick="form1.form1input.value=eval(form1.form1input.value)">
+            <input type="button" value="x"  onclick="mul()">
+        </form>
+
+    </div>
+    <script>
+        function add(){
+            var num1=0;
+            var num2=0;
+            //copy original number string
+            num1=form1.form1input.value;
+            //find last char
+            num2=num1.charAt(num1.length-1); 
+            if(num2=='+'||num2=='-'||num2=='/'||num2=='*'){
+               //remove last
+               form1.form1input.value=num1.substring(0,num1.length-1);
+               // addnew argument
+               form1.form1input.value+='+';
+
+            }else{
+                    form1.form1input.value+='+';
+            }
+
+
+        }
+        function sub(){
+            var num1=0;
+            var num2=0;
+            //copy original number string
+            num1=form1.form1input.value;
+            //find last char
+            num2=num1.charAt(num1.length-1); 
+            if(num2=='+'||num2=='-'||num2=='/'||num2=='*'){
+               //remove last
+               form1.form1input.value=num1.substring(0,num1.length-1);
+               // addnew argument
+               form1.form1input.value+='-';
+
+            }else{
+                    form1.form1input.value+='-';
+            }
+
+
+        }
+        function mul(){
+            var num1=0;
+            var num2=0;
+            //copy original number string
+            num1=form1.form1input.value;
+            //find last char
+            num2=num1.charAt(num1.length-1); 
+            if(num2=='+'||num2=='-'||num2=='/'||num2=='*'){
+               //remove last
+               form1.form1input.value=num1.substring(0,num1.length-1);
+               // addnew argument
+               form1.form1input.value+='*';
+
+            }else{
+                    form1.form1input.value+='*';
+            }
+
+
+        }
+        function div(){
+            var num1=0;
+            var num2=0;
+            //copy original number string
+            num1=form1.form1input.value;
+            //find last char
+            num2=num1.charAt(num1.length-1); 
+            if(num2=='+'||num2=='-'||num2=='/'||num2=='*'){
+               //remove last
+               form1.form1input.value=num1.substring(0,num1.length-1);
+               // addnew argument
+               form1.form1input.value+='/';
+
+            }else{
+                    form1.form1input.value+='/';
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+Calculator using HTML, CSS and Javascript
+
+what i have learned
+
+Basic Calculator Functionality
+Fixing Some Problems in Calculator Project
+Calculator Design (CSS)
+
+key things to remember in HTML
+1-          <form name="form1">
+            <input type="text" name="form1input">
+            <br>
+            <input type="button" value="1" name="" onclick="form1input.value+=1">
+2-onclick="form1input.value+=1">
+3- <input type="button" value="+" name="" onclick="form1input.value+='+'">
+4-<input type="button" value="C" name="" onclick="form1input.value=''">
+5-<input type="button" value="=" name="" onclick="form1input.value=eval(form1input.value)">
+problem faced during building Project
+1-repeated hitting on oprators and then giving value gives no result;
+sol-oprator should only appear once
+2-if i have pressed any one oprator befor and now i have to change it and oi press new oprator , old oprator did not disappear rather it concatenated.
+sol-only one oprator should be there which is latest pressed.
+3-0 should be a default

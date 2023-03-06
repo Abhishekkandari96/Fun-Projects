@@ -1,0 +1,19 @@
+#main{
+    width: 305px;
+    height: 280px;
+    background-color: black;
+    
+}
+input{
+    width:20%;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+}
+#forminput{
+    width: 93%;
+    height: 50px;
+    
+    background-color: silver;
+    box-shadow: gray;
+}
