@@ -31,5 +31,5 @@ I'm a full stack developer...
 
 ## Feedback
 
-If you have any feedback, please reach out to us at abhishekkandari96@gmail.com
+If you have any feedback, please reach out to me at abhishekkandari96@gmail.com
 
