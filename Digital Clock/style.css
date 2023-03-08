@@ -1,0 +1,66 @@
+body{
+    font-family:sans-serif ;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(https://e1.pxfuel.com/desktop-wallpaper/732/167/desktop-wallpaper-black-minimalist-iphone-minimalist-black-landscape.jpg);
+    overflow: hidden;
+    
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white ;
+}
+.Clock{
+    display: flex;
+    
+}
+.Clock div{
+    margin: 5px;
+    position: relative;
+    color: white;
+    
+
+}
+.clock span{
+    width: 100px;
+    height:80px;
+    background: slateblue;
+    opacity:0.8;
+    color: white;
+    display:flex;
+    justify-content: centre;
+    align-content: centre;
+    font-size: 50px;
+    
+    
+}
+.Clock .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+  }
+  
+  .Clock #ampm {
+    bottom: 0;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .quote{
+    color: rgb(240, 255, 252);
+    font-size:10px;
+    word-spacing: 2px;
+    line-height: 20px;
+    text-align: justify;
+  }
